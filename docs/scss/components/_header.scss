@@ -1,0 +1,14 @@
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3em;
+  .logo {
+    margin-left: 1.5em;
+  }
+  .brand {
+    color: white;
+  }
+}

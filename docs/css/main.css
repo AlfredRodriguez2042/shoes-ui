@@ -1,0 +1,172 @@
+/*
+This boilerplate is based in ITCSS and SMACSS
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+.content {
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%); }
+
+.banner {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  .banner::before {
+    content: "ZOOMX";
+    position: absolute;
+    font-size: 20vw;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.banner__img {
+  width: 45%;
+  height: 45%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  rotate: 28deg; }
+
+.banner__details {
+  position: relative;
+  z-index: 50;
+  max-width: 400px;
+  margin-left: 1.5em; }
+  .banner__details .title {
+    color: white; }
+  .banner__details .description {
+    margin-top: 1em;
+    color: white; }
+  .banner__details .link {
+    margin-top: 0.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0.2em 0.5em;
+    line-height: 1.5em; }
+    .banner__details .link:hover {
+      background: white;
+      color: purple; }
+
+.custom-shape-divider-bottom-1601186705 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0; }
+
+.custom-shape-divider-bottom-1601186705 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  transform: rotateY(180deg); }
+
+.custom-shape-divider-bottom-1601186705 .shape-fill {
+  fill: #ffffff; }
+
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3em; }
+  .header .logo {
+    margin-left: 1.5em; }
+  .header .brand {
+    color: white; }
+
+.navbar {
+  width: 400px;
+  margin-right: 4em; }
+
+.menu {
+  display: flex; }
+  .menu__item {
+    flex: auto;
+    list-style: none;
+    text-align: center;
+    line-height: 2.5em; }
+    .menu__item:first-child a {
+      border-bottom: 1px solid white; }
+  .menu__link {
+    text-decoration: none;
+    text-align: center;
+    color: white; }
+
+.products {
+  width: 100%;
+  height: 100%; }
+  .products .featured {
+    margin-bottom: 2em; }
+    .products .featured ul {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .products .featured li {
+      list-style: none;
+      flex-basis: 25%; }
+    .products .featured a {
+      display: block;
+      position: relative;
+      transform: scale(0.85);
+      transition: transform 250ms ease-in-out; }
+      .products .featured a:hover, .products .featured a:focus {
+        transform: scale(1); }
+      .products .featured a::after {
+        content: "";
+        position: absolute;
+        padding: 75% 75% 0 0;
+        left: 0;
+        bottom: 0;
+        border-radius: 50%;
+        background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+        z-index: -1; }
+
+.slider {
+  width: 100%;
+  height: 100%;
+  margin: auto; }
+  .slider .carousel {
+    padding: 2em;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    perspective: 300px;
+    transform-style: preserve-3d;
+    transform-origin: 0% 50%;
+    margin-bottom: 2em; }
+  .slider .carousel-slider .carouse-fixed-item {
+    position: absolute;
+    bottom: 20px;
+    z-index: 10; }
+  .slider .carousel-slider .carousel-item {
+    position: absolute; }
+
+.subtitle {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 3em; }

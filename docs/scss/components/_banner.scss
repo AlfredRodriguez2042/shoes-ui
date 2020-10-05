@@ -1,0 +1,62 @@
+.content {
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-image: $background;
+}
+.banner {
+  width: 100%;
+  height: 100%;
+  // padding: 0 1em;
+  position: relative;
+  &::before {
+    content: "ZOOMX";
+    position: absolute;
+    font-size: 20vw;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.banner__img {
+  width: 45%;
+  height: 45%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  rotate: 28deg;
+}
+.banner__details {
+  position: relative;
+  z-index: 50;
+  max-width: 400px;
+  margin-left: 1.5em;
+  .title {
+    color: white;
+  }
+  .description {
+    margin-top: 1em;
+    color: white;
+  }
+  .link {
+    margin-top: 0.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0.2em 0.5em;
+    line-height: 1.5em;
+    &:hover {
+      background: white;
+      color: purple;
+    }
+  }
+}

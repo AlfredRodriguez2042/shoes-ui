@@ -1,0 +1,24 @@
+.navbar {
+  width: 400px;
+  margin-right: 4em;
+}
+.menu {
+  display: flex;
+
+  &__item {
+    flex: auto;
+    list-style: none;
+    text-align: center;
+    line-height: 2.5em;
+    &:first-child {
+      a {
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+  &__link {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+  }
+}

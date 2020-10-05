@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    /> -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="content">
+      <header class="header">
+        <div class="logo"><h2 class="brand">Brand</h2></div>
+        <nav class="navbar">
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="#products" class="menu__link">Products</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Services</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="banner">
+        <div class="banner__img">
+          <img src="/docs/assets/img/shoe.png" alt="banner" />
+        </div>
+        <div class="banner__details">
+          <h2 class="title">NIKE AIR ZOOMX</h2>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            repudiandae dignissimos voluptatum delectus, nemo omnis.
+          </p>
+          <a href="#" class="link">Details</a>
+        </div>
+      </div>
+      <div class="custom-shape-divider-bottom-1601186705">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <section id="products" class="products">
+      <div class="featured">
+        <h3 class="subtitle">Featured Products</h3>
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="/docs/assets/img/shoe-5.png" alt="featured"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/docs/assets/img/shoe-4.png" alt="featured"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/docs/assets/img/shoe-6.png" alt="featured"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="ourproducts">
+        <h3 class="subtitle">Our Products</h3>
+        <div class="slider">
+          <div class="carousel carousel-slider">
+            <a class="carousel-item" href="#">
+              <h2 class="subtitle">addias</h2>
+              <img src="/docs/assets/img/shoe-1.png" />
+            </a>
+
+            <a class="carousel-item" href="#">
+              <h2 class="subtitle">addias</h2>
+              <img src="/docs/assets/img/shoe-2.png" />
+            </a>
+
+            <a class="carousel-item" href="#">
+              <h2 class="subtitle">addias</h2>
+              <img src="/docs/assets/img/shoe-3.png" />
+            </a>
+
+            <a class="carousel-item" href="#">
+              <img src="/docs/assets/img/shoe-4.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".carousel");
+        var instances = M.Carousel.init(elems);
+      });
+    </script>
+  </body>
+</html>
